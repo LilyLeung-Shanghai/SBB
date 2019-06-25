@@ -6,6 +6,8 @@ Based on these downloaded HTML files, you may generate an ebook by importing int
 
 Tested with Python 2.7.8
 
+Now SBB3 created for Python 3.x
+
 ## Usage
 SBB.py (Sina Blog URL) (asc|desc)
 
