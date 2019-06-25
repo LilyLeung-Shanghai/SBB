@@ -36,6 +36,16 @@ Licensed under the Apache License, Version 2.0
 
 请在 Python 2.7.8 下使用。
 
+现在我加上了适合Python 3.x的版本。感谢 @Vjmms 老师赐教。
+
+## @Vjmms 老师的讲解
+
+把所有读网络请求返回的地方，解码成字符串形式供后面的代码使用。
+即 objResponse.read() 改成 objResponse.read().decode()
+最后写文件的时候要用 utf-8 的编码方式，这样才与代码中构造html文件的地方保持一致。
+另外，python3不能使用urllib2这个库，需要修改成 import urllib.request，代码中所有 urllib2.urlopen 要改为 urllib.request.urlopen。
+不同的python，可以考虑用 sys.version 判断一下，代码中做相应的处理，使用适用于不同版本的语句。
+
 ## 用法
 SBB.py (新浪博客地址) (desc|asc)
 
